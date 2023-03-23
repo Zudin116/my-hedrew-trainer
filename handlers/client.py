@@ -12,16 +12,20 @@ class FSMQuiz(StatesGroup):
     answer = State()
 
 
+hello_message = """
+Hello!
+I'm Hedrew numbers bot!
+If you enter a number i will convert it to words(0-9999).
+
+/help, /start - Show this message.
+/quiz - litle quiz about hedrew numbers.
+"""
+
+
 async def send_welcome(message: types.Message):
     await bot.send_message(
         message.from_user.id,
-        """Hello!
-        I'm Hedrew numbers bot!
-        If you enter a number i will convert it to words(0-10000).
-        
-        /help, /start - Show this message.
-        /quiz - litle quiz about hedrew numbers.
-        """,
+        hello_message,
         reply_markup=kb_client,
     )
 
@@ -56,7 +60,6 @@ async def check_answer(message: types.Message, state: FSMContext):
 
 
 async def convertor(message: types.Message):
-    print(message)
     try:
         number = int(message.text)
     except:
