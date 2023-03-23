@@ -14,8 +14,8 @@ class FSMQuiz(StatesGroup):
 
 hello_message = """
 Hello!
-I'm Hedrew numbers bot!
-If you enter a number i will convert it to words(0-9999).
+I'm Hebrew numbers bot!
+If you enter a number i will convert it to words.
 
 /help, /start - Show this message.
 /quiz - litle quiz about hedrew numbers.
