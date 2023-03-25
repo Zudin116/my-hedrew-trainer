@@ -1,6 +1,6 @@
 FROM python
 COPY requirements.txt .
-RUN pip install --user -r requirements.txt
+RUN pip install -r requirements.txt
 WORKDIR /app
 COPY . .
 WORKDIR /app/lib/num2words
