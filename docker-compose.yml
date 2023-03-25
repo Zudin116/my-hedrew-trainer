@@ -1,0 +1,6 @@
+version: "0.1"
+services:
+  telegrab_bot:
+    build: .
+    environment:
+      TELEGRAM_TOKEN: "ENTER_YOUR_TOKEN"

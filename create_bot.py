@@ -1,9 +1,11 @@
 from aiogram import Bot, Dispatcher
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
+from dotenv import load_dotenv
 
-from env import TOKEN
+import os
 
-API_TOKEN = TOKEN
+load_dotenv()
+API_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 
 # Initialize bot and dispatcher
