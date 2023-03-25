@@ -1,5 +1,5 @@
 FROM python
-RUN pip install --user -r aiogram python-dotenv
+RUN pip install --user aiogram python-dotenv
 WORKDIR /app
 COPY . .
 WORKDIR /app/lib/num2words
