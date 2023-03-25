@@ -1,6 +1,5 @@
 FROM python
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install --user -r aiogram python-dotenv
 WORKDIR /app
 COPY . .
 WORKDIR /app/lib/num2words
