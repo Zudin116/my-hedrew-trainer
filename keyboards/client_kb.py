@@ -1,5 +1,6 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
+
 b1 = KeyboardButton("/help")
 b2 = KeyboardButton("/quiz")
 b3 = KeyboardButton("/cancel")
